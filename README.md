@@ -69,6 +69,21 @@ sudo apt install -y curl
 sudo apt install -y lynx
 ```
 
+*VS Code*
+
+Import Repository
+```
+wget -O- https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vscode.gpg
+
+echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list
+```
+
+Update and Install
+```
+sudo apt update
+sudo apt install code -y
+```
+
 **Nodejs**
 
 Using [Node Version Manager](https://github.com/nvm-sh/nvm)
