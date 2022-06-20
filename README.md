@@ -68,3 +68,17 @@ sudo apt install -y tmux
 sudo apt install -y curl
 sudo apt install -y lynx
 ```
+
+**Nodejs**
+
+Using [Node Version Manager](https://github.com/nvm-sh/nvm)
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+source .bashrc 
+```
+
+List the versions and install
+```
+nvm ls-remote
+nvm install [x.x.x]
+```
