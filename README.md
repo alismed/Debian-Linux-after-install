@@ -39,6 +39,11 @@ flatpak install --from https://flathub.org/repo/appstream/com.snes9x.Snes9x.flat
 flatpak install --user https://flathub.org/repo/appstream/com.retrodev.blastem.flatpakref
 ```
 
+**Hugo Static Site Generators **
+```
+sudo apt -y install hugo
+```
+
 <a id="Databases"></a>
 ```
 sudo apt install -y mysql-clients
@@ -69,7 +74,8 @@ sudo apt install -y curl
 sudo apt install -y lynx
 ```
 
-*VS Code*
+<a id="ides"></a>
+**VS Code**
 
 Import Repository
 ```
