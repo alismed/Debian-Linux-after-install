@@ -12,7 +12,7 @@ $ sudo apt upgrade && sudo apt update
 
 
 ```
-pkg-config libgtk2.0-dev libxml2-dev libxv-dev libsdl-dev libsdl-dev intltool
+sudo apt install -y pkg-config libgtk2.0-dev libxml2-dev libxv-dev libsdl-dev libsdl-dev intltool libssl-dev
 ```
 
 
@@ -39,7 +39,7 @@ flatpak install --from https://flathub.org/repo/appstream/com.snes9x.Snes9x.flat
 flatpak install --user https://flathub.org/repo/appstream/com.retrodev.blastem.flatpakref
 ```
 
-**Hugo Static Site Generators **
+**Hugo Static Site Generators**
 ```
 sudo apt -y install hugo
 ```
@@ -60,6 +60,38 @@ cat ~/.ssh/id_rsa.pub<a id="Text Editors"></a>
 
 ```
 sudo apt install -y vim
+```
+
+<a id="languages"></a>
+**asdf**
+```
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
+```
+
+Edit `~/.bashrc` adding:
+```
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+```
+
+Update your current shell environment
+```
+source .bashrc
+```
+
+Add the plugin and install. _Example: Ruby_
+```
+asdf plugin-add ruby
+```
+
+List of available versions
+```
+asdf list all ruby
+```
+
+Install
+```
+asdf install ruby 3.1.0
 ```
 
 <a id="Terminal"></a>
