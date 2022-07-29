@@ -17,6 +17,7 @@ sudo apt install -y pkg-config libgtk2.0-dev libxml2-dev libxv-dev libsdl-dev li
 
 
 ```
+sudo apt install -y tree
 sudo apt install -y cowsay
 sudo apt install -y fortune
 sudo apt install -y htop
