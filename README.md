@@ -57,6 +57,13 @@ sudo apt update -y
 sudo apt install -y microsoft-edge-dev
 ```
 
+**Teams**
+```
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/ms-teams stable main" > /etc/apt/sources.list.d/teams.list'
+sudo apt update -y
+sudo apt install -y teams
+```
+
 <a id="Databases"></a>
 ```
 sudo apt install -y mysql-clients
