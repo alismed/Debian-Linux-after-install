@@ -45,6 +45,18 @@ flatpak install --user https://flathub.org/repo/appstream/com.retrodev.blastem.f
 sudo apt -y install hugo
 ```
 
+<a id="microsoft"></a>
+```
+curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+```
+
+**Edge**
+```
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-dev.list'
+sudo apt update -y
+sudo apt install -y microsoft-edge-dev
+```
+
 <a id="Databases"></a>
 ```
 sudo apt install -y mysql-clients
