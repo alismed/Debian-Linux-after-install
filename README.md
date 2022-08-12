@@ -112,6 +112,7 @@ asdf list all ruby
 Install
 ```
 asdf install ruby 3.1.0
+asdf global ruby 3.1.0
 ```
 
 <a id="Terminal"></a>
@@ -119,6 +120,15 @@ asdf install ruby 3.1.0
 sudo apt install -y tmux
 ```
 
+<a id="languages"></a>
+**Java**
+Using asdf:
+```
+asdf plugin add java
+asdf java install openjdk-11
+asdf global java openjdk-11
+. ~/.asdf/plugins/java/set-java-home.bash
+```
 
 <a id="Browsers"></a>
 ```
