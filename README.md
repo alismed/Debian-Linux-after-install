@@ -130,11 +130,18 @@ asdf global java openjdk-11
 . ~/.asdf/plugins/java/set-java-home.bash
 ```
 
+**Maven**
+```
+sudo apt install maven
+```
+
 <a id="Browsers"></a>
 ```
 sudo apt install -y curl
 sudo apt install -y lynx
 ```
+See Microsoft section to install Edge
+
 
 <a id="ides"></a>
 **VS Code**
