@@ -64,10 +64,19 @@ sudo apt update -y
 sudo apt install -y teams
 ```
 
+**Databases**
 <a id="Databases"></a>
 ```
 sudo apt install -y mysql-clients
 ```
+
+**DBeaver**
+```
+git clone https://github.com/dbeaver/dbeaver.git dbeaver
+cd dbeaver
+mvn package
+```
+Binaries are in product/community/target/products/
 
 <a id="git"></a>
 ```
