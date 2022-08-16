@@ -124,9 +124,14 @@ asdf install ruby 3.1.0
 asdf global ruby 3.1.0
 ```
 
-<a id="Terminal"></a>
+<a id="terraform"></a>
+**Terraform**
 ```
-sudo apt install -y tmux
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+sudo apt update
+sudo apt install terraform
+terraform -install-autocomplete
 ```
 
 <a id="languages"></a>
@@ -142,6 +147,12 @@ asdf global java openjdk-11
 **Maven**
 ```
 sudo apt install maven
+```
+
+**Terminal**
+<a id="Terminal"></a>
+```
+sudo apt install -y tmux
 ```
 
 <a id="Browsers"></a>
