@@ -149,10 +149,12 @@ asdf global java openjdk-11
 sudo apt install maven
 ```
 
-**Terminal**
+**Terminal and CLI Tools**
 <a id="Terminal"></a>
 ```
 sudo apt install -y tmux
+sudo apt install awscli
+curl https://cli-assets.heroku.com/install.sh | sh
 ```
 
 <a id="Browsers"></a>
