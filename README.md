@@ -163,6 +163,14 @@ asdf global java openjdk-11
 sudo apt install maven
 ```
 
+**.Net Core**
+```
+wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+sudo apt upgrade
+sudo apt install dotnet-sdk-5-0
+```
 
 **Terminal and CLI Tools**
 <a id="Terminal"></a>
