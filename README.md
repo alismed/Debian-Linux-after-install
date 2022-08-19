@@ -2,6 +2,21 @@
 
 My setup after install Debian 11
 
+- [IDE's](#ides)
+- [System](#system)
+- [Git](#git)
+- [Games](#games)
+- [Databases](#databases)
+- [Languages](#languages)
+- [Browsers](#browsers)
+- [Docker](#docker)
+- [Javascript packages](#jspackage)
+- [Comumunicators](#communicators)
+- [Termninal & CLI's](#terminal)
+- [Microsoft](#microsoft)
+- [Audio](#audio)
+- [Video](#video)
+
 
 <a id="system"></a>
 **Update packages**
@@ -134,7 +149,6 @@ sudo apt install terraform
 terraform -install-autocomplete
 ```
 
-<a id="languages"></a>
 **Java**
 Using asdf:
 ```
@@ -149,6 +163,7 @@ asdf global java openjdk-11
 sudo apt install maven
 ```
 
+
 **Terminal and CLI Tools**
 <a id="Terminal"></a>
 ```
@@ -157,7 +172,7 @@ sudo apt install awscli
 curl https://cli-assets.heroku.com/install.sh | sh
 ```
 
-<a id="Browsers"></a>
+<a id="browsers"></a>
 ```
 sudo apt install -y curl
 sudo apt install -y lynx
