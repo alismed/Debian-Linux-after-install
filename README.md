@@ -176,8 +176,17 @@ sudo apt install dotnet-sdk-5-0
 <a id="Terminal"></a>
 ```
 sudo apt install -y tmux
-sudo apt install awscli
+
+## Heroku
 curl https://cli-assets.heroku.com/install.sh | sh
+
+## AWS
+sudo apt install awscli
+
+## AWS SAM
+wget https://github.com/aws/aws-sam-cli/releases/latest/download/aws-sam-cli-linux-x86_64.zip
+unzip aws-sam-cli-linux-x86_64.zip
+sudo ./sam-installation/install
 ```
 
 <a id="browsers"></a>
