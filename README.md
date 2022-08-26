@@ -207,6 +207,20 @@ See Microsoft section to install Edge
 
 
 <a id="ides"></a>
+**IntelliJ IDEA Community**
+```
+wget https://download-cf.jetbrains.com/idea/ideaIC-2020.1.tar.gz
+tar -zxvf ideaIC-2022.2.1.tar.gz
+sudo mkdir /opt/idea
+sudo chmod 777 /opt/idea
+mv idea-IC-222.3739.54/* /opt/idea/
+
+sh /opt/idea/bin/idea.sh
+```
+Finish following the instructions in the wizard window.
+In the gear icon create a desktop entry
+
+
 **VS Code**
 
 Import Repository
