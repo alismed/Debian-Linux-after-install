@@ -24,12 +24,12 @@ My setup after install Debian 11
 $ sudo apt upgrade && sudo apt update
 ```
 
-
+**Libraries**
 ```
 sudo apt install -y pkg-config libgtk2.0-dev libxml2-dev libxv-dev libsdl-dev libsdl-dev intltool libssl-dev
 ```
 
-
+**Tools**
 ```
 sudo apt install -y tree
 sudo apt install -y cowsay
@@ -38,6 +38,29 @@ sudo apt install -y htop
 sudo apt install -y neofetch
 sudo apt install -y putty
 ```
+
+**Login**
+
+Hide user from login list
+
+Create the file /etc/dconf/profile/gdm
+```
+user-db:user
+system-db:gdm
+file-db:/usr/share/gdm/greeter.dconf-defaults
+```
+
+Create the directory `sudo mkdir /etc/dconf/db/gdm.d`
+
+Create the file /etc/dconf/db/gdm.d/00-login-screen
+```
+[org/gnome/login-screen]
+# Do not show the user list
+disable-user-list=true
+```
+
+Execute `sudo dconf update`
+
 
 <a id="packages"></a>
 ```
@@ -49,6 +72,7 @@ sudo apt install -y flatpak
 ```
 sudo apt install -y snes9x
 sudo apt install -y stella
+sudo apt install -y chocolate-doom
 
 flatpak install --from https://flathub.org/repo/appstream/com.snes9x.Snes9x.flatpakref
 flatpak install --user https://flathub.org/repo/appstream/com.retrodev.blastem.flatpakref
@@ -79,9 +103,10 @@ sudo apt install -y teams
 ```
 
 **Databases**
-<a id="Databases"></a>
+<a id="databases"></a>
 ```
-sudo apt install -y mysql-clients
+sudo apt install -y default-mysql-client
+sudo apt install -y postgresql-client
 ```
 
 **DBeaver**
@@ -94,7 +119,7 @@ Binaries are in product/community/target/products/
 
 <a id="git"></a>
 ```
-$ sudo apt install -y tig
+$ sudo apt install -y git tig
 
 # ssh key
 $ ssh-keygen -t rsa -b 4096 -C "<your_email@example.com>"
@@ -148,7 +173,7 @@ terraform -install-autocomplete
 Using asdf:
 ```
 asdf plugin add java
-asdf java install openjdk-11
+asdf install java openjdk-11
 asdf global java openjdk-11
 . ~/.asdf/plugins/java/set-java-home.bash
 ```
@@ -255,8 +280,8 @@ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o 
 
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo apt update
+sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose docker-compose-plugin
 ```
 
 <a id="nodejs"></a>
