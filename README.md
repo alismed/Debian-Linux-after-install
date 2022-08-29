@@ -2,15 +2,14 @@
 
 My setup after install Debian 11
 
-- [IDE's](#ides)
 - [System](#system)
 - [Git](#git)
+- [Text Editors & IDE's](#ides)
 - [Games](#games)
 - [Databases](#databases)
 - [Languages](#languages)
 - [Browsers](#browsers)
 - [Docker](#docker)
-- [Javascript packages](#jspackage)
 - [Comumunicators](#communicators)
 - [Termninal & CLI's](#terminal)
 - [Microsoft](#microsoft)
@@ -99,11 +98,7 @@ $ sudo apt install -y tig
 
 # ssh key
 $ ssh-keygen -t rsa -b 4096 -C "<your_email@example.com>"
-cat ~/.ssh/id_rsa.pub<a id="Text Editors"></a>
-```
-
-```
-sudo apt install -y vim
+cat ~/.ssh/id_rsa.pub
 ```
 
 <a id="languages"></a>
@@ -207,6 +202,11 @@ See Microsoft section to install Edge
 
 
 <a id="ides"></a>
+**Vim**
+```
+sudo apt install -y vim
+```
+
 **IntelliJ IDEA Community**
 ```
 wget https://download-cf.jetbrains.com/idea/ideaIC-2020.1.tar.gz
