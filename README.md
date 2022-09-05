@@ -209,13 +209,18 @@ sudo apt install -y tmux
 ## Heroku
 curl https://cli-assets.heroku.com/install.sh | sh
 
-## AWS
+## AWS CLI
 sudo apt install awscli
 
 ## AWS SAM
 wget https://github.com/aws/aws-sam-cli/releases/latest/download/aws-sam-cli-linux-x86_64.zip
 unzip aws-sam-cli-linux-x86_64.zip
 sudo ./sam-installation/install
+rm aws-sam-cli-linux-x86_64.zip
+
+## AWS Vault
+sudo curl -L -o /usr/local/bin/aws-vault https://github.com/99designs/aws-vault/releases/download/v6.6.0/aws-vault-linux-amd64
+sudo chmod 755 /usr/local/bin/aws-vault
 ```
 
 <a id="browsers"></a>
@@ -239,6 +244,7 @@ tar -zxvf ideaIC-2022.2.1.tar.gz
 sudo mkdir /opt/idea
 sudo chmod 777 /opt/idea
 mv idea-IC-222.3739.54/* /opt/idea/
+rm ideaIC-2022.2.1.tar.gz
 
 sh /opt/idea/bin/idea.sh
 ```
