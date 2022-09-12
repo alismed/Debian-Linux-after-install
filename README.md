@@ -37,6 +37,9 @@ sudo apt install -y fortune
 sudo apt install -y htop
 sudo apt install -y neofetch
 sudo apt install -y putty
+sudo apt install -y netsniff-ng
+sudo apt install -y tcpdump
+sudo apt install -y wireshark-gtk
 ```
 
 **Login**
