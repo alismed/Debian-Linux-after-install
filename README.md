@@ -32,6 +32,7 @@ sudo apt install -y pkg-config libgtk2.0-dev libxml2-dev libxv-dev libsdl-dev li
 **Tools**
 ```
 sudo apt install -y tree
+sudo apt install -y sl
 sudo apt install -y cowsay
 sudo apt install -y fortune
 sudo apt install -y htop
@@ -235,9 +236,9 @@ See Microsoft section to install Edge
 
 
 <a id="ides"></a>
-**Vim**
 ```
 sudo apt install -y vim
+sudo apt install -y arduino
 ```
 
 **IntelliJ IDEA Community**
