@@ -231,6 +231,7 @@ sudo chmod 755 /usr/local/bin/aws-vault
 ```
 sudo apt install -y curl
 sudo apt install -y lynx
+sudo apt install -y chromium
 ```
 See Microsoft section to install Edge
 
