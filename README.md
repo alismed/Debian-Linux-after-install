@@ -26,7 +26,11 @@ $ sudo apt upgrade && sudo apt update
 
 **Libraries**
 ```
-sudo apt install -y pkg-config libgtk2.0-dev libxml2-dev libxv-dev libsdl-dev libsdl-dev intltool libssl-dev
+sudo apt install -y 
+          pkg-config libgtk2.0-dev \ 
+          libxml2-dev libxv-dev \ 
+          libsdl-dev libsdl-dev intltool \ 
+          libssl-dev libbz2-dev
 ```
 
 **Tools**
