@@ -124,6 +124,7 @@ sudo apt install -y teams
 sudo apt install -y default-mysql-client
 sudo apt install -y postgresql-client
 sudo apt install -y redis-tools
+sudo apt install -y sqlite3
 ```
 
 **DBeaver**
