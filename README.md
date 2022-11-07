@@ -45,6 +45,7 @@ sudo apt install -y putty
 sudo apt install -y netsniff-ng
 sudo apt install -y tcpdump
 sudo apt install -y wireshark-gtk
+sudo apt install -y openvpn network-manager-openvpn
 ```
 
 **SpeedTest**
