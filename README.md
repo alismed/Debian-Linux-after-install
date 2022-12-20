@@ -91,8 +91,13 @@ sudo apt install -y snes9x
 sudo apt install -y stella
 sudo apt install -y chocolate-doom
 
+#snes9x
 flatpak install --from https://flathub.org/repo/appstream/com.snes9x.Snes9x.flatpakref
+# blastem
 flatpak install --user https://flathub.org/repo/appstream/com.retrodev.blastem.flatpakref
+# duke3d
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub com.eduke32.EDuke32
 ```
 
 **Hugo Static Site Generators**
