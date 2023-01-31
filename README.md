@@ -227,8 +227,27 @@ sudo apt install dotnet-sdk-5-0
 
 **Terminal and CLI Tools**
 <a id="Terminal"></a>
+**Powerline**
+```
+sudo apt install -y powerline fonts-powerline powerline-gitstatus
+```
+
+Add the following lines to the `bashrc`
+```
+# Powerline configuration
+powerline-daemon -q
+POWERLINE_BASH_CONTINUATION=1
+POWERLINE_BASH_SELECT=1
+. /usr/share/powerline/bindings/bash/powerline.sh
+```
+
+Execute `source ~/.bashrc`
+
+
+**TMUX**
 ```
 sudo apt install -y tmux
+
 
 ## Heroku
 curl https://cli-assets.heroku.com/install.sh | sh
