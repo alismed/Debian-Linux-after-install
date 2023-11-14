@@ -225,6 +225,13 @@ sudo apt upgrade
 sudo apt install dotnet-sdk-5-0
 ```
 
+**Remmina** 
+```
+echo 'deb http://ftp.debian.org/debian stretch-backports main' | sudo tee --append /etc/apt/sources.list.d/stretch-backports.list >> /dev/null
+sudo apt update
+sudo apt install -y remmina remmina-plugin-rdp remmina-plugin-secret remmina-plugin-spice
+```
+
 **Terminal and CLI Tools**
 <a id="Terminal"></a>
 **Powerline**
@@ -247,8 +254,9 @@ Execute `source ~/.bashrc`
 **TMUX**
 ```
 sudo apt install -y tmux
+```
 
-
+```
 ## Heroku
 curl https://cli-assets.heroku.com/install.sh | sh
 
