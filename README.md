@@ -30,7 +30,8 @@ sudo apt install -y
           pkg-config libgtk2.0-dev \ 
           libxml2-dev libxv-dev \ 
           libsdl-dev libsdl-dev intltool \ 
-          libssl-dev libbz2-dev
+          libssl-dev libbz2-dev \
+          libreadline-dev
 ```
 
 **Tools**
