@@ -31,7 +31,7 @@ sudo apt install -y
           libxml2-dev libxv-dev \ 
           libsdl-dev libsdl-dev intltool \ 
           libssl-dev libbz2-dev \
-          libreadline-dev
+          libyaml-dev libreadline-dev
 ```
 
 **Tools**
