@@ -288,6 +288,7 @@ See Microsoft section to install Edge
 <a id="ides"></a>
 ```
 sudo apt install -y vim
+sudo apt install -y neovim
 sudo apt install -y arduino
 ```
 
