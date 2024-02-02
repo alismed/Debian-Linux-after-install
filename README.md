@@ -151,6 +151,13 @@ $ ssh-keygen -t rsa -b 4096 -C "<your_email@example.com>"
 cat ~/.ssh/id_rsa.pub
 ```
 
+**Git Delta**
+```
+curl -LO https://github.com/dandavison/delta/releases/download/0.16.5/git-delta_0.16.5_i386.deb
+sudo dpkg -i git-delta_0.16.5_i386.deb
+```
+Configure [~/.gitconfig](https://dandavison.github.io/delta/configuration.html) file
+
 <a id="languages"></a>
 **asdf**
 ```
@@ -262,7 +269,9 @@ sudo apt install -y tmux
 curl https://cli-assets.heroku.com/install.sh | sh
 
 ## AWS CLI
-sudo apt install awscli
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
 
 ## AWS SAM
 wget https://github.com/aws/aws-sam-cli/releases/latest/download/aws-sam-cli-linux-x86_64.zip
