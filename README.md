@@ -161,7 +161,7 @@ Configure [~/.gitconfig](https://dandavison.github.io/delta/configuration.html) 
 <a id="languages"></a>
 **asdf**
 ```
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
 ```
 
 Edit `~/.bashrc` adding:
