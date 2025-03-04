@@ -284,6 +284,14 @@ sudo curl -L -o /usr/local/bin/aws-vault https://github.com/99designs/aws-vault/
 sudo chmod 755 /usr/local/bin/aws-vault
 ```
 
+<a id="LocalStack"></a>
+```shell
+curl --output localstack-cli-4.2.0-linux-amd64-onefile.tar.gz \
+    --location https://github.com/localstack/localstack-cli/releases/download/v4.2.0/localstack-cli-4.2.0-linux-amd64-onefile.tar.gz
+sudo tar xvzf localstack-cli-4.2.0-linux-*-onefile.tar.gz -C /usr/local/bin
+localstack update all
+```
+
 <a id="browsers"></a>
 ```
 sudo apt install -y curl
